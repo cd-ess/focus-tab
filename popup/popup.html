@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Focus Tab</title>
   <link rel="stylesheet" href="popup.css" />
 </head>
@@ -9,7 +9,7 @@
   <h1>Focus Tab</h1>
 
   <!-- Mode Toggle -->
-  <div id="mode-toggle">
+  <div class="toggle-group">
     <label>
       <input type="radio" name="mode" value="blacklist" checked />
       Blacklist
@@ -26,18 +26,16 @@
   </div>
 
   <!-- Site List -->
-  <ul id="site-list">
-    <!-- Dynamically generated items will appear here -->
-  </ul>
+  <ul id="site-list"></ul>
 
   <!-- Add Site -->
-  <div id="add-site">
+  <div class="add-site">
     <input type="text" id="site-input" placeholder="e.g. youtube.com" />
     <button id="add-button">Add</button>
   </div>
 
   <!-- Action Buttons -->
-  <div id="action-buttons">
+  <div class="action-buttons">
     <button id="hideTabs">Close Distracting Tabs</button>
     <button id="restoreTabs">Reopen Tabs</button>
   </div>
